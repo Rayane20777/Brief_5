@@ -43,8 +43,7 @@ $data = $conn->query($clientInfo);
                 echo '<td>' . $client['nationalite'] . '</td>';
                 echo '<td>' . $client['genre'] . '</td>';
                 echo '<td>';
-                echo '<a href="#">Update</a>';
-                echo '<a href="#">Delete</a>';
+                echo '<a href="#">Compte</a>';
                 echo '</td>';
                 echo '</tr>';
             }
