@@ -1,0 +1,99 @@
+/* General styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+
+.masthead {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.masthead-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-masthead {
+    justify-content: center;
+}
+
+.nav-masthead a {
+    margin-right: 20px;
+}
+
+/* Hero section styles */
+
+.hero {
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.hero .inner {
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-heading {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Features section styles */
+
+.features {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.features h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+}

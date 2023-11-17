@@ -26,10 +26,9 @@ $data = $conn->query($clientComptes);
         <thead>
         <tr>
         <th>id</th>
-        <th>balance</th>
-        <th>devise</th>
-        <th>rib</th>
-        <th>id_client</th>
+        <th>montant</th>
+        <th>types</th>
+        <th>id_compte</th>
         </tr>
         </thead>
         <tbody>   
