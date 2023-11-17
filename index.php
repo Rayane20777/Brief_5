@@ -15,7 +15,7 @@ include 'config.php';
 
 
 // Ajouter transaction
-// $sql = 'INSERT INTO transactions VALUES (NULL, "222400", "credit", 27)';
+// $sql = 'INSERT INTO transactions VALUES (NULL, "222400", "credit", "27")';
 // $req = mysqli_query($conn, $sql);
 
 

@@ -2,9 +2,9 @@
 
 include 'config.php';
 
-$compteID = $_GET['id'];
+$compteId = $_GET['id'];
 
-$clientComptes = "SELECT * FROM transactions WHERE id_comptes = $compteId";
+$clientComptes = "SELECT * FROM transactions WHERE id_compte = $compteId";
 $data = $conn->query($clientComptes);
 
 ?>
@@ -20,7 +20,7 @@ $data = $conn->query($clientComptes);
 </head>
 <body>
 
-    <h1>Accounts of client <?php echo $comptetId ?></h1>
+    <h1>Accounts of client <?php echo $compteId ?></h1>
     <br>
     <table class="table">
         <thead>
