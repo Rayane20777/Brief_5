@@ -3,8 +3,9 @@
 include 'config.php';
 
 
-$comptesInfo = "SELECT * FROM comptes WHERE id = 1";
+$comptesInfo = "SELECT * FROM comptes";
 $data = $conn->query($comptesInfo);
+
 ?>
 
 
@@ -19,7 +20,7 @@ $data = $conn->query($comptesInfo);
 </head>
 <body>
 
-    <h1>List of clients</h1>
+    <h1>List of comptes</h1>
     <br>
     <table class="table">
         <thead>
@@ -33,15 +34,15 @@ $data = $conn->query($comptesInfo);
         </thead>
         <tbody>   
         <?php
-            foreach ($data as $comptes) {
+            foreach ($data as $compte) {
                 echo '<tr>';
-                echo '<td>' . $comptes['id'] . '</td>';
-                echo '<td>' . $comptes['balance'] . '</td>';
-                echo '<td>' . $comptes['devise'] . '</td>';
-                echo '<td>' . $comptes['rib'] . '</td>';
-                echo '<td>' . $comptes['id_client'] . '</td>';
+                echo '<td>' . $compte['id'] . '</td>';
+                echo '<td>' . $compte['balance'] . '</td>';
+                echo '<td>' . $compte['devise'] . '</td>';
+                echo '<td>' . $compte['rib'] . '</td>';
+                echo '<td>' . $compte['id_client'] . '</td>';
                 echo '<td>';
-                echo '<a href="#">Transaction</a>';
+                echo "<a href='transactionsOfAccount.php?id=$compte[id]'>Transactions</a>";
                 echo '</td>';
                 echo '</tr>';
             }

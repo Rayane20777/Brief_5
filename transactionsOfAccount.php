@@ -2,11 +2,12 @@
 
 include 'config.php';
 
+$compteID = $_GET['id'];
 
-$transactionsInfo = "SELECT * FROM transactions";
-$data = $conn->query($transactionsInfo);
+$clientComptes = "SELECT * FROM transactions WHERE id_comptes = $compteId";
+$data = $conn->query($clientComptes);
+
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +20,16 @@ $data = $conn->query($transactionsInfo);
 </head>
 <body>
 
-    <h1>List of transactions</h1>
+    <h1>Accounts of client <?php echo $comptetId ?></h1>
     <br>
     <table class="table">
         <thead>
         <tr>
-            <th>id</th>
-            <th>montant</th>
-            <th>types</th>
-            <th>id_compte</th>
+        <th>id</th>
+        <th>balance</th>
+        <th>devise</th>
+        <th>rib</th>
+        <th>id_client</th>
         </tr>
         </thead>
         <tbody>   
@@ -38,7 +40,7 @@ $data = $conn->query($transactionsInfo);
                 echo '<td>' . $transactions['montant'] . '</td>';
                 echo '<td>' . $transactions['types'] . '</td>';
                 echo '<td>' . $transactions['id_compte'] . '</td>';
-                echo '</tr>';
+                echo '<td>';
             }
             ?>      
         </tbody>

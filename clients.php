@@ -43,7 +43,7 @@ $data = $conn->query($clientInfo);
                 echo '<td>' . $client['nationalite'] . '</td>';
                 echo '<td>' . $client['genre'] . '</td>';
                 echo '<td>';
-                echo '<a href="#">Compte</a>';
+                echo "<a href='accountsOfClients.php?id=$client[id]'>Compte</a>";
                 echo '</td>';
                 echo '</tr>';
             }
