@@ -40,6 +40,9 @@ $data = $conn->query($clientComptes);
                 echo '<td>' . $transactions['types'] . '</td>';
                 echo '<td>' . $transactions['id_compte'] . '</td>';
                 echo '<td>';
+                echo "<a href='http://localhost/Brief_5/compte.php'>Compte</a>";
+                echo '</td>';
+                echo '<td>';
             }
             ?>      
         </tbody>

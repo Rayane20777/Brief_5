@@ -42,6 +42,8 @@ $data = $conn->query($clientAccounts);
                 echo '<td>' . $compte['rib'] . '</td>';
                 echo '<td>' . $compte['id_client'] . '</td>';
                 echo '<td>';
+                echo "<a href='http://localhost/Brief_5/clients.php'>Compte</a>";
+                echo '</td>';
             }
             ?>      
         </tbody>

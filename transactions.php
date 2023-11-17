@@ -5,6 +5,8 @@ include 'config.php';
 
 $transactionsInfo = "SELECT * FROM transactions";
 $data = $conn->query($transactionsInfo);
+
+
 ?>
 
 
@@ -38,6 +40,9 @@ $data = $conn->query($transactionsInfo);
                 echo '<td>' . $transactions['montant'] . '</td>';
                 echo '<td>' . $transactions['types'] . '</td>';
                 echo '<td>' . $transactions['id_compte'] . '</td>';
+                echo '<td>';
+                echo "<a href=localhost/Brief_5/compte.php>Compte</a>";
+                echo '</td>';
                 echo '</tr>';
             }
             ?>      
